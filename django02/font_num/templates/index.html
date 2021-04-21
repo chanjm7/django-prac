@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > * {
+            text-align: center;
+        }
+        input {
+            width: 400px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>글자 수 세기</h1>
+    <form action="{% url 'result' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="글자를 입력하세요" name="text">
+        <br>
+        <br>
+        <button type="submit" name="include_space">공백포함결과</button>
+        <button type="submit" name="not_include_space">공백미포함결과</button>
+
+    </form>
+</body>
+</html>
