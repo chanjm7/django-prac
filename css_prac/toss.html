@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox > div{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: right;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: beige;
+            box-shadow: 0 30px 60px 12px rgba(0, 0, 33, 0.05),
+            0 4px 24px 0 rgba(0, 0, 33, 0.05),
+            0 0 1px 0 rgba(0, 0, 33, 0.09);
+        }
+        .flexbox > div > :nth-child(3){ 
+            justify-self: flex-end;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="kookmin">
+            <img src="/back_logo_img/logo_1.png" alt="" height="25" width="25">
+            <span>국민은행</span>
+            <span>2,134,000원</span>
+        </div>
+        <div class="shinhan">
+            <img src="/back_logo_img/logo_3.png" alt="" height="25" width="25">
+            <span>신한은행</span>
+            <span>1,126,600원</span>
+        </div>
+        <div class="hana">
+            <img src="/back_logo_img/logo_4.png" alt="" height="25" width="25">
+            <span>하나은행</span>
+            <span>684,000원</span>
+        </div>
+        <div class="wori">
+            <img src="/back_logo_img/logo_5.png" alt="" height="25" width="25">
+            <span>우리은행</span>
+            <span>339,050원</span>
+        </div>
+        <div class="NH">
+            <img src="/back_logo_img/logo_2.png" alt="" height="25" width="25">
+            <span>NH 농협은행</span>
+            <span>1,412,000원</span>
+        </div>
+    </div>
+</body>
+</html>
