@@ -5,7 +5,6 @@ def index(request):
     return render(request, 'index.html')
 
 def result(request):
-    print(request.POST)
     if 'include_space' in request.POST:
         context = {'result':len(request.POST['text'])}
     else:
